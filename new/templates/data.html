@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsevier Data Details</title>
+</head>
+<body>
+    <h1>Elsevier Complete Data Details</h1>
+    <p>Length of Total rows in Data: {{ length }}</p>
+    <p>Columns:</p>
+    <ul>
+        {% for column in columns %}
+            <li>{{ column }}</li>
+        {% endfor %}
+    </ul>
+    {{data|safe}}
+    <br>
+    <a href="/">
+        <button>Home Page</button>
+    </a>
+</body>
+</html>
